@@ -2,24 +2,24 @@ pipeline {
     agent none
     stages {
 	
-	stage('Non-Parallel Stage') {
+	stage('Build') {
 	    agent {
                         label "master"
                 }
         steps {
-                echo 'This stage will be executed first'
+                bat "Build.bat"
                 }
         }
 
 	
-        stage('Run Tests') {
+        stage('Unit-Deploye') {
             parallel {
                 stage('Test On Windows') {
                     agent {
-                        label "Windows_Node"
+                        label "master"
                     }
                     steps {
-                        echo "Task1 on Agent"
+                        bat "Unit.bat"
                     }
                     
                 }
@@ -28,7 +28,7 @@ pipeline {
                         label "master"
                     }
                     steps {
-						echo "Task1 on Master"
+						bat "Deploy.bat"
 					}
                 }
             }
