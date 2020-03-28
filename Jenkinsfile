@@ -7,7 +7,7 @@ pipeline {
                         label "master"
                 }
         steps {
-		cd "scriptedPipeline-Jenkins"
+		git https://github.com/nauraizmushtaq/scriptedPipeline-Jenkins.git
                 bat "Build.bat"
                 }
         }
