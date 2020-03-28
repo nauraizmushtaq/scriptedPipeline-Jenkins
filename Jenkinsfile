@@ -7,6 +7,7 @@ pipeline {
                         label "master"
                 }
         steps {
+	       checkout scm
                bash "Build.sh"
                 }
         }
