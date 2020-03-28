@@ -7,8 +7,7 @@ pipeline {
                         label "master"
                 }
         steps {
-		git https://github.com/nauraizmushtaq/scriptedPipeline-Jenkins.git
-                bat "Build.bat"
+               bash "Build.sh"
                 }
         }
 
@@ -20,7 +19,7 @@ pipeline {
                         label "master"
                     }
                     steps {
-                        bat "Unit.bat"
+                        bash "Unit.sh"
                     }
                     
                 }
@@ -30,7 +29,7 @@ pipeline {
                     }
                     steps {
 			
-			  bat "Deploy.bat"
+			  bash "Deploy.sh"
 					}
                 }
             }
