@@ -7,7 +7,8 @@ pipeline {
                         label "master"
                 }
         steps {
-                echo "Build.bat"
+		cd "scriptedPipeline-Jenkins"
+                bat "Build.bat"
                 }
         }
 
