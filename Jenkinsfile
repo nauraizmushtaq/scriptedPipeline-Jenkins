@@ -7,8 +7,8 @@ pipeline {
                         label "master"
                 }
         steps {
-	       checkout scm
-               bash "Build.sh"
+	       
+               sh 'bash "Build.sh"'
                 }
         }
 
@@ -20,7 +20,7 @@ pipeline {
                         label "master"
                     }
                     steps {
-                        bash "Unit.sh"
+                        sh 'bash "Unit.sh"'
                     }
                     
                 }
@@ -30,7 +30,7 @@ pipeline {
                     }
                     steps {
 			
-			  bash "Deploy.sh"
+			  sh 'bash "Deploy.sh"'
 					}
                 }
             }
