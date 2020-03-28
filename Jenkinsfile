@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     stages {
 	
 	stage('Build') {
@@ -12,7 +12,7 @@ pipeline {
         }
 
 	
-        stage('Unit-Deploye') {
+        stage('Unit') {
             parallel {
                 stage('Test On Windows') {
                     agent {
@@ -28,7 +28,8 @@ pipeline {
                         label "master"
                     }
                     steps {
-						bat "Deploy.bat"
+			
+			  bat "Deploy.bat"
 					}
                 }
             }
