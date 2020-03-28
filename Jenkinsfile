@@ -7,7 +7,7 @@ pipeline {
                         label "master"
                 }
         steps {
-                bat "Build.bat"
+                echo "Build.bat"
                 }
         }
 
