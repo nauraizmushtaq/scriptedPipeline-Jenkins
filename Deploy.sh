@@ -1,2 +1,2 @@
 
-echo "Deploying Build : %date% : %time% and Finally"
+echo "Deploying Build : %date% : %time%"
