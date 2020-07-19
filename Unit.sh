@@ -1,1 +1,1 @@
-echo "Running Unit Test Cases : %date% : %time%"
+echo "---------------------Output-------------Test The Job Task-----------------------------"

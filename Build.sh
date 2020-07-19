@@ -1,1 +1,1 @@
-echo "Building the Project : %date% : %time%"
+echo "---------------------Output-------------Build The Job Task-----------------------------"

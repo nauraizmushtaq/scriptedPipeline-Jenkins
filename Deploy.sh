@@ -1,2 +1,1 @@
-
-echo "Deploying Build : %date% : %time%"
+echo "---------------------Output-------------Deploy The Job Task-----------------------------"
