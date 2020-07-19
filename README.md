@@ -1,1 +1,1 @@
-# scriptedPipeline-Jenkins
+# scriptedPipeline-Jenkin
