@@ -1,3 +1,3 @@
 # scripted Pipeline-Jenkins
 
-Running script on dev commit Jenkins
+Running script on dev commit Jenkin
